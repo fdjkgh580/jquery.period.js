@@ -1,13 +1,13 @@
 {
   "name": "jquery.period.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/jquery.period.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "keywords": [],
+  "keywords": ["jquery", "times", "each", "loop", "plugin", "interval", "timeout", "period"],
   "author": "",
   "license": "ISC",
   "devDependencies": {

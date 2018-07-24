@@ -17,6 +17,7 @@ $(".item").period({
     }
 })
 ````
+若在 todo() 返回 false, 那麼將會終止繼續，並觸發 after()。
 
 # 看範例
 前往查看 Codepen => https://codepen.io/fdjkgh580/pen/NBRLae

@@ -10,17 +10,20 @@
     <script src="../dist/jquery.period.min.js"></script>
     <style>
         .box {
-          float: left;
-          width: 100%;
+          width: 800px;
+          margin: 0 auto;
         }
 
         .item {
           float: left;
           width: 70px;
-          height: 0px;
+          height: 00px;
           background: #2592a5;
-          margin: 7px;
+          margin-right: 10px;
           border-radius: 8px;
+          &.last-child {
+            margin-right: 0px;
+          }
         }
 
         .start {

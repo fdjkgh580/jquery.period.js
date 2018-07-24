@@ -2,12 +2,19 @@
 批次讓元素間隔時間執行
 
 # 簡單使用
-這個範例是讓所有的 .item 間距 300 毫秒，批次動畫的增加高度。
+這個範例是讓所有的 .item 間距 200 毫秒，批次動畫的增加高度。
 ````javascript
-$(".item").period(300, function (index){
-    $(this).animate({
-        height: '70px'
-    })  
+$(".item").period({
+    delayTimes: 200,
+    before: function (){
+        // ...
+    },
+    todo: function(index){
+        // ...
+    },
+    after: function (){
+        // ...
+    }
 })
 ````
 

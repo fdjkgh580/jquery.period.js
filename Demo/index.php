@@ -21,9 +21,9 @@
           background: #2592a5;
           margin-right: 10px;
           border-radius: 8px;
-          &.last-child {
-            margin-right: 0px;
-          }
+        }
+        .item:last-child {
+          margin-right: 0px;
         }
 
         .start {
@@ -65,7 +65,6 @@
     <button class="start">Start</button>
 
     <div class="box">
-        <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>

@@ -40,9 +40,9 @@
     /**
      * 批次讓元素間隔時間執行
      * @param  {int}        param.delayTimes     延遲的時間
-     * @param  {callable}   before               執行前
+     * @param  {callable}   *before               執行前
      * @param  {callable}   todo                 指派動作
-     * @param  {callable}   after                結束後
+     * @param  {callable}   *after                結束後
      */
     $.fn.period = function (param){
         
@@ -55,13 +55,16 @@
 
         
         // 觸發前
-        _before.call(this);
+        if (_before !== undefined){
+            _before.call(this);
+        }
 
         // 循環觸發
         loop(0);
 
-        // 當 loop 停止的時候觸發 after()
+        // 設定當 loop 停止的時候觸發 after()
         _endLoop = () => {
+            if (_after === undefined) return false;
             _after.call(this);
         }
     }
